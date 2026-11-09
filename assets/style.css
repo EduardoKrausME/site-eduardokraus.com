@@ -90,3 +90,64 @@
 .free-conversion-links .button{white-space:normal}
 @media(max-width:930px){.free-conversion-content{grid-template-columns:1fr}.free-conversion-links{flex-direction:row;flex-wrap:wrap;align-items:center}}
 @media(max-width:730px){.free-benefits .free-benefits-grid{grid-template-columns:1fr}.free-benefit-item{padding:17px}.free-conversion-links{flex-direction:column;align-items:stretch}.free-conversion-links a:not(.button){text-align:center}.free-hero h1{font-size:clamp(2.8rem,11vw,4.5rem)}}
+
+
+/* Kopere Pay: página do produto integrada à identidade visual do site. */
+.topbar .nav{gap:clamp(12px,1.5vw,27px)}
+.kp-hero{background:radial-gradient(ellipse at 95% 0%,#174f9b 0%,transparent 40%),linear-gradient(125deg,#061c39 0%,#093d84 100%);color:#fff;overflow:hidden}
+.kp-hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:65px;align-items:center;padding-top:82px;padding-bottom:100px}
+.kp-breadcrumb{display:flex;gap:12px;align-items:center;font-size:.82rem;color:#c3d9f5;margin-bottom:43px}
+.kp-breadcrumb a{text-decoration:underline;text-underline-offset:4px}
+.kp-eyebrow{font-size:.72rem;font-weight:850;color:#8acbff;letter-spacing:.16em;margin:0 0 19px}
+.kp-hero h1{font-size:clamp(3.3rem,5.4vw,5.3rem);margin:0 0 23px}
+.kp-hero h1 span{color:#93ccff}
+.kp-hero .kp-lead{font-size:1.1rem;line-height:1.75;color:#d9eaff;max-width:590px}
+.kp-actions{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0 0}
+.kp-button-outline{color:#fff;border-color:#7fa8d6;background:rgba(255,255,255,.04)}
+.kp-button-outline:hover{background:rgba(255,255,255,.13)}
+.kp-hero-note{font-size:.82rem;color:#a6c4e5;margin:25px 0 0}
+.kp-workflow{background:#fff;border:1px solid #d2e3f8;border-radius:23px;padding:29px;color:#10345d;box-shadow:0 35px 75px rgba(0,8,24,.24)}
+.kp-workflow-caption{display:flex;align-items:center;gap:9px;letter-spacing:.09em;font-size:.73rem;color:#6e83a0;font-weight:850;margin-bottom:24px}
+.kp-workflow-dot{display:block;width:9px;height:9px;border-radius:50%;background:#0daa74}
+.kp-flow-step{border:1px solid #dde9f7;border-radius:14px;padding:19px;display:flex;align-items:center;gap:15px}
+.kp-flow-step>span{display:grid;place-items:center;flex:0 0 38px;height:38px;border-radius:11px;background:#e9f3ff;color:#0758d4;font-size:.78rem;font-weight:850}
+.kp-flow-step>div{flex:1;min-width:0}
+.kp-flow-step strong,.kp-flow-step small{display:block}
+.kp-flow-step strong{font-size:.93rem}
+.kp-flow-step small{font-size:.73rem;color:#71829b}
+.kp-flow-step b{font-size:.89rem;color:#08885a}
+.kp-flow-line{height:27px;width:2px;background:#d0e3f5;margin-left:37px}
+.kp-workflow-foot{background:#eaf6ff;border-radius:13px;margin-top:20px;padding:17px 20px}
+.kp-workflow-foot span,.kp-workflow-foot strong{display:block}
+.kp-workflow-foot span{font-size:.7rem;color:#5c7594}
+.kp-workflow-foot strong{font-size:1rem;color:#0758d4}
+.kp-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+.kp-feature{border:1px solid #dce6f3;background:#fff;border-radius:17px;padding:28px}
+.kp-feature-number{display:block;font-size:.73rem;font-weight:850;letter-spacing:.1em;color:#0758d4;margin-bottom:23px}
+.kp-feature h3{font-size:1.31rem}
+.kp-feature p{font-size:.9rem;margin:0}
+.kp-provider-list{display:flex;gap:9px;flex-wrap:wrap;margin:25px 0}
+.kp-provider-list span{border-radius:99px;padding:9px 15px;background:#eaf4ff;color:#064d9f;border:1px solid #cde4fc;font-size:.82rem;font-weight:750}
+.kp-screenshot{margin:0;border:1px solid #dce6f3;background:#fff;border-radius:19px;overflow:hidden;box-shadow:0 12px 35px rgba(5,43,84,.06)}
+.kp-screenshot img{display:block;width:100%;height:auto;object-fit:contain}
+.kp-screenshot figcaption{padding:15px 21px;font-size:.77rem;color:#657892}
+.kp-image-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px;align-items:start}
+.kp-image-grid .kp-screenshot{height:100%}
+.kp-image-grid .kp-screenshot img{width:100%;object-fit:contain;object-position:top;background:#f9fcff}
+.kp-info-panel{border-radius:23px;padding:38px;background:linear-gradient(130deg,#0653b1,#063776);color:#fff}
+.kp-info-panel span{display:block;color:#a8d7ff;font-size:.73rem;font-weight:850;letter-spacing:.11em;margin-bottom:25px}
+.kp-info-panel strong{display:block;font-size:clamp(1.6rem,2.8vw,2.7rem);letter-spacing:-.05em;line-height:1.3}
+.kp-info-panel p{color:#d1e8ff;margin:20px 0 0}
+.kp-faq{max-width:860px}
+.kp-callout-inner{background:linear-gradient(120deg,#052c67,#075ace);border-radius:25px;padding:clamp(30px,5vw,57px);display:grid;grid-template-columns:1fr auto;align-items:center;gap:38px}
+.kp-callout-inner .eyebrow{color:#b8dcff}
+.kp-callout-inner h2{color:#fff;font-size:clamp(2rem,3.5vw,3.3rem);max-width:770px}
+.kp-callout-inner p{color:#d1e8ff;max-width:640px;margin:0}
+.kp-callout-actions{display:flex;flex-direction:column;gap:17px;align-items:stretch}
+.kp-callout-actions .button{white-space:normal}
+.kp-hosting-link{font-size:.83rem;text-decoration:underline;text-underline-offset:4px;color:#fff;text-align:center;font-weight:750}
+.kp-bottom{padding-top:12px}
+.kp-bottom .note{margin-top:22px;max-width:900px}
+@media(max-width:1120px){.topbar .nav{gap:12px;font-size:.81rem}.topbar .container{gap:13px}.topbar .container>.button{padding:13px 14px}.kp-hero-grid{gap:30px}.kp-workflow{padding:21px}}
+@media(max-width:900px){.kp-hero-grid{grid-template-columns:1fr;padding-top:65px;padding-bottom:70px}.kp-workflow{max-width:610px}.kp-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.kp-callout-inner{grid-template-columns:1fr}.kp-callout-actions{align-items:flex-start}}
+@media(max-width:730px){.kp-hero h1{font-size:clamp(3rem,11vw,4.5rem)}.kp-feature-grid,.kp-image-grid{grid-template-columns:1fr}.kp-hero-grid{padding-top:55px}.kp-callout-actions{align-items:stretch}.kp-provider-list span{padding:7px 12px}.kp-workflow{padding:17px}}

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eduardokraus.com/sitemap.xml
+Sitemap: https://eduardokrausme.github.io/site-eduardokraus.com/sitemap.xml

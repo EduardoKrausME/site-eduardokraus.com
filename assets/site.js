@@ -1,0 +1,6 @@
+(function(){'use strict';
+const menu=document.querySelector('[data-menu-toggle]');const nav=document.querySelector('.nav');if(menu&&nav){menu.addEventListener('click',()=>{let opened=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(opened));});nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}})}
+const modal=document.getElementById('proposta');function openModal(){if(modal){if(typeof modal.showModal==='function')modal.showModal();else modal.setAttribute('open','')}}
+document.querySelectorAll('[data-proposta]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();openModal()}));document.querySelectorAll('[data-modal-close]').forEach(b=>b.addEventListener('click',()=>modal?.close()));modal?.addEventListener('click',e=>{if(e.target===modal)modal.close()});
+document.querySelectorAll('[data-tabs]').forEach(tabs=>{let buttons=[...tabs.querySelectorAll('[role=tab]')],panels=[...tabs.querySelectorAll('[role=tabpanel]')];buttons.forEach(btn=>btn.addEventListener('click',()=>{buttons.forEach(b=>{const active=b===btn;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1});panels.forEach(p=>p.hidden=p.id!==btn.getAttribute('aria-controls'))}));});
+})();

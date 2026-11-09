@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://eduardokraus.com/</loc></url>
+  <url><loc>https://eduardokraus.com/hospedagem/</loc></url>
+  <url><loc>https://eduardokraus.com/migracao/</loc></url>
+  <url><loc>https://eduardokraus.com/suporte/</loc></url>
+  <url><loc>https://eduardokraus.com/sobre/</loc></url>
+  <url><loc>https://eduardokraus.com/instalacao-moodle-gratis/</loc></url>
+  <url><loc>https://eduardokraus.com/migracao-moodle-gratis/</loc></url>
+  <url><loc>https://eduardokraus.com/layout-moodle-gratis/</loc><image:image><image:loc>https://eduardokraus.com/assets/moodles/eu/EuVendas.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/Observatorio90.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/RegenMed.png</image:loc></image:image></url>
+  <url><loc>https://eduardokraus.com/moodle-bonito/</loc><image:image><image:loc>https://eduardokraus.com/assets/moodles/eu/EuVendas.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/Observatorio90.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/RegenMed.png</image:loc></image:image></url>
+  <url><loc>https://eduardokraus.com/moodle-bonito/grupo-eu-aprendiz/</loc><image:image><image:loc>https://eduardokraus.com/assets/moodles/eu/CuConcurso.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/eu/EuAgro.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/eu/EuCafe.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/eu/EuIndustria.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/eu/EuNegocio.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/eu/EuSeguranca.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/eu/EuSolar.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/eu/EuVendas.png</image:loc></image:image><image:image><image:loc>https://eduardokraus.com/assets/moodles/eu/EuVerde.png</image:loc></image:image></url>
+  <url><loc>https://eduardokraus.com/moodle-bonito/observatorio-90/</loc><image:image><image:loc>https://eduardokraus.com/assets/moodles/Observatorio90.png</image:loc></image:image></url>
+  <url><loc>https://eduardokraus.com/moodle-bonito/regenmed/</loc><image:image><image:loc>https://eduardokraus.com/assets/moodles/RegenMed.png</image:loc></image:image></url>
+</urlset>

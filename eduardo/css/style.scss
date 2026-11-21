@@ -1,0 +1,196 @@
+body {
+    font-family: Roboto;
+}
+
+.nav-container {
+    background: #323B4C;
+    color: #FFFFFF;
+    text-align: center;
+    height: 250px;
+
+    div {
+        height: 100%;
+    }
+
+    .img-area {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 7px solid #FFFFFF;
+            position: absolute;
+            bottom: -70px;
+            z-index: 5;
+        }
+    }
+
+    .title-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            font-family: Montserrat;
+            font-size: 72px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-family: Montserrat;
+            font-size: 22px;
+            font-weight: 100;
+        }
+    }
+}
+
+.left-area {
+    background: #E4E4E4;
+    padding: 60px 40px 40px;
+    color: #353B4C;
+
+    h2 {
+        margin-top: 60px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 30px;
+        border-bottom: 2px solid #353B4C;
+        margin-bottom: 21px;
+        padding-bottom: 4px;
+        letter-spacing: 4px;
+    }
+
+    .list-item {
+        color: #353B4C;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 10px;
+
+        &.df {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            margin-right: 12px;
+            width: 24px;
+        }
+    }
+
+    ul {
+        padding-left: 21px;
+    }
+}
+
+.right-area {
+    padding: 25px 30px;
+    color: #343A4A;
+
+    section {
+        display: flex;
+        margin-top: 50px;
+
+        .line {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 52px;
+            margin-right: 30px;
+
+            img {
+                width: 35px;
+                z-index: 4;
+                position: absolute;
+            }
+
+            hr {
+                width: 0;
+                height: 100%;
+                padding: 0;
+                margin: 32px 0 0;
+                border: 1px solid #343A4A;
+            }
+        }
+
+        .text {
+            width: 100%;
+
+            ul {
+                padding-left: 21px;
+            }
+
+            h2 {
+                width: 100%;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 30px;
+                border-bottom: 2px solid #353B4C;
+                margin-bottom: 21px;
+                padding-bottom: 4px;
+                letter-spacing: 4px;
+            }
+
+            h3 {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: 500;
+                font-size: 26px;
+                margin-top: 50px;
+
+                &#videofront {
+                    margin-top: 25px;
+                }
+
+                span {
+                    font-weight: 300;
+                    font-size: 20px;
+                    white-space: nowrap;
+                }
+
+                &:before {
+                    content: "◉";
+                    position: absolute;
+                    left: -66px;
+                    top: 3px;
+                    font-size: 21px;
+                }
+            }
+
+            h4 {
+                font-weight: 400;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@import "../lightbox/lightbox";
+
+@media print {
+    .container {
+        min-width: 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .nav-container {
+        padding-left: 2cm;
+        padding-right: 2cm;
+    }
+    .text-container {
+        .left-area {
+            display: none;
+        }
+
+        .right-area {
+            width: 100%;
+            flex: initial;
+            max-width: initial;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.lightbox-galery {
+    display   : flex;
+    margin    : 20px auto;
+    flex-wrap : wrap;
+    .image-lightbox-galery {
+        display        : flex;
+        flex-direction : column;
+        width          : calc(33% - 8px);
+        cursor         : move;
+        margin         : 4px;
+        padding        : 0;
+        position       : relative;
+        @media (max-width : 600px) {
+            width : calc(50% - 8px);
+        }
+        a {
+            display : inherit;
+        }
+        img {
+            padding    : 0;
+            border     : 5px solid #FFFFFF;
+            box-shadow : 0 0 3px #CCCCCC;
+            z-index    : -1;
+            position   : relative;
+            width      : 100%;
+            box-sizing : border-box;
+            @media print {
+                border : 2px solid #535252;
+            }
+        }
+        .caption {
+            background-color : rgba(255, 255, 255, 0.75);
+            width            : 100%;
+            text-align       : center;
+            color            : #5E423F;
+            z-index          : 1;
+            padding          : 3px 0;
+            a {
+                color : #775450;
+            }
+            @media print {
+                background-color : rgba(205, 205, 205, 0.75);
+                a {
+                    text-decoration : underline;
+                }
+            }
+        }
+    }
+}

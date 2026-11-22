@@ -359,3 +359,84 @@
  .topbar .menu-toggle{display:block}
  .topbar .container>.button{margin-left:auto}
 }
+
+
+/* Identidade compartilhada do hero: mesmo azul do Moodle Mobile.
+   Vale para a home, serviços, integrações, plugins e cases sem alterar layouts internos. */
+:root {
+    --site-hero-gradient:
+        radial-gradient(ellipse at 88% 30%, #1365b8 0, transparent 35%),
+        linear-gradient(128deg, #061e3b 0, #093a76 61%, #0758d4 100%);
+}
+:is(.hero, .page-hero, .gateway-hero, .kp-hero, .plugin-hero, .plugin-subhero) {
+    background: var(--site-hero-gradient);
+    color: #fff;
+}
+:is(.hero, .page-hero, .gateway-hero, .kp-hero, .plugin-hero, .plugin-subhero) h1 {
+    color: #fff;
+}
+:is(.hero, .page-hero, .gateway-hero, .kp-hero, .plugin-hero, .plugin-subhero) h1 span,
+.gateway-hero h1 em {
+    color: #7fd3ff;
+}
+.free-hero h1 span {
+    color: #a7f6d0;
+    text-decoration-color: #65dbaa;
+}
+/* O texto e os caminhos de navegação precisam de contraste sobre o degradê escuro. */
+.hero .intro,
+.hero .mini-note,
+.page-hero p,
+.gateway-hero .gateway-hero-lead,
+.gateway-hero .gateway-product-note,
+.plugin-hero-copy > p:not(.eyebrow),
+.plugin-hero .plugin-hero-note,
+.plugin-subhero p:not(.eyebrow) {
+    color: #d5e6fa;
+}
+:is(.free-breadcrumb, .case-breadcrumb, .gateway-breadcrumb, .kp-breadcrumb, .plugin-breadcrumb) {
+    color: #bdd6f2;
+}
+:is(.free-breadcrumb, .case-breadcrumb, .gateway-breadcrumb, .kp-breadcrumb, .plugin-breadcrumb) a {
+    color: #e7f4ff;
+}
+.free-breadcrumb a:hover,
+.case-breadcrumb a:hover,
+.gateway-breadcrumb a:hover,
+.kp-breadcrumb a:hover,
+.plugin-breadcrumb a:hover {
+    color: #fff;
+}
+.plugin-hero .plugin-hero-note,
+.gateway-hero .gateway-product-note,
+.hero .mini-note {
+    color: #bad3f0;
+}
+/* Chamadas primárias claras e secundárias visíveis, preservando as dimensões de cada botão. */
+:is(.hero, .page-hero, .gateway-hero, .kp-hero, .plugin-hero, .plugin-subhero) .button.blue {
+    background: #fff;
+    border-color: #fff;
+    color: #0758d4;
+}
+:is(.hero, .page-hero, .gateway-hero, .kp-hero, .plugin-hero, .plugin-subhero) .button.blue:hover {
+    background: #eaf4ff;
+    border-color: #eaf4ff;
+    color: #053c88;
+}
+:is(.hero, .page-hero, .gateway-hero, .kp-hero, .plugin-hero, .plugin-subhero) .button.ghost {
+    color: #e7f4ff;
+}
+:is(.hero, .page-hero, .gateway-hero, .kp-hero, .plugin-hero, .plugin-subhero) .button.outline {
+    border-color: #a5c7ed;
+    color: #fff;
+    background: transparent;
+}
+:is(.hero, .page-hero, .gateway-hero, .kp-hero, .plugin-hero, .plugin-subhero) .button.outline:hover {
+    background: #ffffff16;
+    border-color: #fff;
+}
+:is(.hero, .page-hero, .gateway-hero, .kp-hero, .plugin-hero, .plugin-subhero) a:focus-visible,
+:is(.hero, .page-hero, .gateway-hero, .kp-hero, .plugin-hero, .plugin-subhero) button:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+}

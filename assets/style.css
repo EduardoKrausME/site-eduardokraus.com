@@ -351,7 +351,7 @@
 /* Cabeçalho e rodapé compartilhados por todas as páginas em pt_br. */
 .topbar .nav{gap:clamp(10px,1vw,16px);font-size:.82rem}
 .topbar .nav a[aria-current="page"]{color:var(--blue)}
-.footer .brand{display:inline-flex;background:#fff;max-width:100%}
+.footer .brand{display:inline-flex;background:#05182e;max-width:100%;padding:0;border-radius:0}
 .footer .brand-logo{display:block;width:180px;max-width:100%;height:auto}
 @media(max-width:1160px){
  .topbar .nav{display:none;position:absolute;top:77px;left:0;right:0;background:#fff;padding:20px;flex-direction:column;align-items:stretch;gap:12px;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}

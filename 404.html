@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0758d4">
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="A página solicitada não foi encontrada. Volte ao site de Eduardo Kraus para conhecer os serviços Moodle.">
+    <title>Página não encontrada (404) | Eduardo Kraus</title>
+    <link rel="icon" href="/site-eduardokraus.com/favicon.ico">
+    <link rel="stylesheet" href="/site-eduardokraus.com/assets/style.css">
+    <style>
+        .error-main {
+            display: flex;
+            align-items: center;
+            min-height: calc(100vh - 270px);
+            padding: clamp(70px, 9vw, 125px) 0;
+            overflow: hidden;
+            background: radial-gradient(circle at 80% 20%, #d8ecff 0, transparent 36%),
+                linear-gradient(125deg, #f7fbff, #eaf4ff);
+        }
+        .error-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+            align-items: center;
+            gap: clamp(35px, 6vw, 95px);
+        }
+        .error-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 24px;
+            color: var(--blue);
+            font-size: .78rem;
+            font-weight: 850;
+            letter-spacing: .13em;
+            text-transform: uppercase;
+        }
+        .error-eyebrow::before {
+            content: "";
+            width: 28px;
+            height: 2px;
+            background: currentColor;
+        }
+        .error-copy h1 {
+            max-width: 720px;
+            margin-bottom: 23px;
+            font-size: clamp(3.1rem, 5.6vw, 5.7rem);
+        }
+        .error-copy h1 span { color: var(--blue); }
+        .error-copy > p {
+            max-width: 550px;
+            margin-bottom: 0;
+            color: #53657d;
+            font-size: clamp(1rem, 1.65vw, 1.2rem);
+        }
+        .error-actions {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 32px;
+        }
+        .error-actions .button.ghost {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        .error-shortcuts {
+            margin-top: 38px;
+            padding-top: 22px;
+            border-top: 1px solid #ccdff2;
+        }
+        .error-shortcuts p {
+            margin: 0 0 10px;
+            font-size: .79rem;
+            font-weight: 800;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            color: #6984a0;
+        }
+        .error-shortcuts a {
+            display: inline-flex;
+            margin: 0 20px 10px 0;
+            color: #064cbb;
+            font-size: .91rem;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        .error-visual {
+            position: relative;
+            min-width: 0;
+            padding: 25px 0;
+        }
+        .error-visual::before {
+            content: "";
+            position: absolute;
+            inset: 0 4% 0 -4%;
+            border-radius: 50%;
+            background: #a9d5ff;
+            opacity: .4;
+            filter: blur(35px);
+        }
+        .error-window {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #b7d0ed;
+            border-radius: 22px;
+            background: #fff;
+            box-shadow: 0 35px 75px rgba(5, 38, 81, .16);
+            transform: rotate(2deg);
+        }
+        .error-window-top {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 17px 22px;
+            background: #f4f8fe;
+            border-bottom: 1px solid #dce6f3;
+        }
+        .error-window-dots { display: flex; gap: 7px; }
+        .error-window-dots i {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #c5d5e8;
+        }
+        .error-window-dots i:first-child { background: #72b2fb; }
+        .error-window-address {
+            overflow: hidden;
+            color: #7190b0;
+            font-size: .72rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .error-window-body {
+            min-height: 290px;
+            padding: clamp(32px, 5vw, 62px) 30px;
+            text-align: center;
+        }
+        .error-window-number {
+            color: var(--blue);
+            font-size: clamp(6rem, 12vw, 9rem);
+            font-weight: 850;
+            letter-spacing: -.11em;
+            line-height: 1;
+        }
+        .error-window-status {
+            margin-top: 8px;
+            color: #617d9b;
+            font-size: .75rem;
+            font-weight: 800;
+            letter-spacing: .2em;
+        }
+        .error-window-path {
+            overflow-wrap: anywhere;
+            max-width: 360px;
+            margin: 24px auto 0;
+            padding: 12px 16px;
+            border: 1px solid #dbe8f7;
+            border-radius: 9px;
+            background: #f2f7fe;
+            color: #506f91;
+            font: .77rem/1.5 ui-monospace, SFMono-Regular, Consolas, monospace;
+        }
+        .error-footer { padding: 32px 0; background: var(--navy); color: #d0e0f1; }
+        .error-footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: .85rem;
+        }
+        .error-footer-links { display: flex; flex-wrap: wrap; gap: 22px; }
+        .error-footer a:hover { color: #fff; }
+        .error-footer a:focus-visible,
+        .error-actions a:focus-visible,
+        .error-shortcuts a:focus-visible,
+        .error-header a:focus-visible {
+            outline: 3px solid #66b4ff;
+            outline-offset: 4px;
+        }
+        @media (max-width: 820px) {
+            .error-layout { grid-template-columns: 1fr; gap: 25px; }
+            .error-visual { max-width: 530px; width: 100%; margin: 0 auto; }
+            .error-window { transform: none; }
+            .error-main { padding: 65px 0; }
+        }
+        @media (max-width: 480px) {
+            .error-copy h1 { font-size: clamp(2.8rem, 12vw, 4rem); }
+            .error-actions { align-items: stretch; flex-direction: column; }
+            .error-actions .button { width: 100%; }
+            .error-window-body { min-height: 240px; }
+            .error-window-path { font-size: .69rem; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .error-window { transform: none; }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip" href="#conteudo" data-i18n="skip">Ir para o conteúdo</a>
+
+    <header class="topbar error-header">
+        <div class="container">
+            <a class="brand" href="/site-eduardokraus.com/pt_br/" data-home aria-label="Página inicial Eduardo Kraus">
+                <img class="brand-logo" src="/site-eduardokraus.com/assets/logo-color.png"
+                     alt="Eduardo Kraus" width="180" height="55" decoding="async">
+            </a>
+            <a class="button blue" href="/site-eduardokraus.com/pt_br/" data-home data-i18n="headerHome">Voltar ao site</a>
+        </div>
+    </header>
+
+    <main id="conteudo" class="error-main">
+        <div class="container error-layout">
+            <div class="error-copy">
+                <div class="error-eyebrow" data-i18n="eyebrow">Erro 404 · Página não encontrada</div>
+                <h1 data-i18n="title">Não encontramos <span>essa página.</span></h1>
+                <p data-i18n="message">O endereço pode ter mudado ou não existir mais. Você pode voltar à página inicial ou usar um dos atalhos abaixo para continuar navegando.</p>
+                <div class="error-actions">
+                    <a class="button blue" href="/site-eduardokraus.com/pt_br/" data-home data-i18n="home">Voltar à página inicial</a>
+                    <a class="button ghost" href="mailto:contato-site@eduardokraus.com" data-i18n="contact">Precisa de ajuda? Entre em contato →</a>
+                </div>
+                <div class="error-shortcuts" id="atalhos">
+                    <p data-i18n="shortcuts">Talvez você esteja procurando</p>
+                    <a href="/site-eduardokraus.com/pt_br/hospedagem/" data-page="hosting" data-i18n="hosting">Hospedagem Moodle</a>
+                    <a href="/site-eduardokraus.com/pt_br/suporte/" data-page="support" data-i18n="support">Suporte técnico</a>
+                    <a href="/site-eduardokraus.com/pt_br/plugins-moodle/" data-page="plugins" data-i18n="plugins">Plugins Moodle</a>
+                </div>
+            </div>
+            <div class="error-visual" aria-hidden="true">
+                <div class="error-window">
+                    <div class="error-window-top">
+                        <div class="error-window-dots"><i></i><i></i><i></i></div>
+                        <span class="error-window-address">eduardokraus.com / 404</span>
+                    </div>
+                    <div class="error-window-body">
+                        <div class="error-window-number">404</div>
+                        <div class="error-window-status">PAGE_NOT_FOUND</div>
+                        <div class="error-window-path" id="error-path">/pt_br/</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="error-footer">
+        <div class="container error-footer-inner">
+            <span>© 2026 Eduardo Kraus</span>
+            <div class="error-footer-links">
+                <a href="/site-eduardokraus.com/pt_br/" data-home data-i18n="footerHome">Página inicial</a>
+                <a href="mailto:contato-site@eduardokraus.com">contato-site@eduardokraus.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (() => {
+            'use strict';
+
+            // O 404.html da raiz é usado pelo GitHub Pages também para URLs profundas.
+            const projectBase = '/site-eduardokraus.com/';
+            const base = location.pathname.startsWith(projectBase) ? projectBase : '/';
+            const path = location.pathname.startsWith(base) ? location.pathname.slice(base.length) : '';
+            const lang = /^en(?:\/|$)/i.test(path) ? 'en'
+                : /^pt_br(?:\/|$)/i.test(path) ? 'pt_br'
+                : /^pt(?:[-_]|$)/i.test(navigator.language || '') ? 'pt_br' : 'en';
+
+            const translations = {
+                pt_br: {
+                    skip: 'Ir para o conteúdo',
+                    headerHome: 'Voltar ao site',
+                    eyebrow: 'Erro 404 · Página não encontrada',
+                    title: 'Não encontramos essa página.',
+                    message: 'O endereço pode ter mudado ou não existir mais. Você pode voltar à página inicial ou usar um dos atalhos abaixo para continuar navegando.',
+                    home: 'Voltar à página inicial',
+                    contact: 'Precisa de ajuda? Entre em contato →',
+                    shortcuts: 'Talvez você esteja procurando',
+                    hosting: 'Hospedagem Moodle',
+                    support: 'Suporte técnico',
+                    plugins: 'Plugins Moodle',
+                    footerHome: 'Página inicial'
+                },
+                en: {
+                    skip: 'Skip to content',
+                    headerHome: 'Back to website',
+                    eyebrow: 'Error 404 · Page not found',
+                    title: "We couldn't find this page.",
+                    message: 'This address may have changed or no longer exists. You can return to the homepage or use one of the links below to keep browsing.',
+                    home: 'Back to homepage',
+                    contact: 'Need help? Get in touch →',
+                    shortcuts: 'You might be looking for',
+                    hosting: 'Moodle Hosting',
+                    support: 'Technical Support',
+                    plugins: 'Moodle Plugins',
+                    footerHome: 'Homepage'
+                }
+            };
+
+            const strings = translations[lang];
+            document.documentElement.lang = lang === 'pt_br' ? 'pt-BR' : 'en';
+            document.title = (lang === 'pt_br' ? 'Página não encontrada (404)' : 'Page not found (404)') + ' | Eduardo Kraus';
+
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.dataset.i18n;
+                if (strings[key]) {
+                    if (key === 'title') {
+                        // Preserva a ênfase visual sem inserir HTML de origem externa.
+                        const phrase = strings.title;
+                        element.textContent = phrase;
+                        const start = lang === 'pt_br' ? 'essa página.' : 'this page.';
+                        const pos = phrase.lastIndexOf(start);
+                        if (pos >= 0) {
+                            element.textContent = phrase.slice(0, pos);
+                            const span = document.createElement('span');
+                            span.textContent = start;
+                            element.append(span);
+                        }
+                    } else {
+                        element.textContent = strings[key];
+                    }
+                }
+            });
+
+            const home = base + lang + '/';
+            document.querySelectorAll('[data-home]').forEach(link => {
+                link.href = home;
+                if (link.hasAttribute('aria-label')) {
+                    link.setAttribute('aria-label', lang === 'pt_br' ? 'Página inicial Eduardo Kraus' : 'Eduardo Kraus homepage');
+                }
+            });
+
+            // Os atalhos portugueses apontam apenas para páginas existentes.
+            // A versão em inglês poderá usar seus próprios slugs após a tradução.
+            const ptPages = {
+                hosting: 'hospedagem/',
+                support: 'suporte/',
+                plugins: 'plugins-moodle/'
+            };
+            if (lang === 'pt_br') {
+                document.querySelectorAll('[data-page]').forEach(link => {
+                    link.href = home + ptPages[link.dataset.page];
+                });
+            } else {
+                document.getElementById('atalhos').hidden = true;
+            }
+
+            document.getElementById('error-path').textContent = location.pathname;
+        })();
+    </script>
+</body>
+</html>

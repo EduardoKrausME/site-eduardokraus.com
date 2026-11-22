@@ -442,3 +442,14 @@
     outline: 2px solid #fff;
     outline-offset: 4px;
 }
+
+/* PT-BR / EN controls adjacent to the proposal CTA. */
+.language-switcher{display:inline-flex;align-items:center;gap:3px;border:1px solid var(--line);border-radius:11px;padding:3px;background:#f5f8fd;flex-shrink:0;white-space:nowrap}
+.language-option{display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:8px 9px;border-radius:8px;color:#47607b;font-size:.75rem;font-weight:800;line-height:1.1;transition:background .15s,color .15s}
+.language-option:hover,.language-option:focus-visible{color:var(--blue);background:#e5efff}
+.language-option.active{color:var(--blue);background:#fff;box-shadow:0 1px 5px #08275119}
+.language-option:focus-visible{outline:2px solid var(--blue);outline-offset:1px}
+.language-flag{font-size:1rem;line-height:1}
+@media(max-width:1050px){.topbar .container>.button{margin-left:auto}}
+@media(max-width:600px){.topbar .container{gap:6px}.language-option{padding:7px 5px;gap:3px;font-size:.66rem}.topbar .container>.button{font-size:.69rem;padding:11px 8px}.topbar .brand-logo{width:112px}}
+@media(max-width:420px){.topbar .container{gap:4px}.topbar .brand-logo{width:94px}.topbar .container>.button{font-size:.62rem;padding:10px 5px}.language-switcher{padding:2px;gap:0}.language-option{padding:6px 3px;font-size:.63rem}.language-flag{font-size:.88rem}.menu-toggle{padding:8px 9px}}

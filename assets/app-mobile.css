@@ -119,3 +119,18 @@
 @media(max-width:820px){.am-hero-grid,.am-enem-grid{grid-template-columns:1fr}.am-hero{padding-bottom:55px}.am-hero-grid{gap:15px}.am-hero h1{font-size:clamp(2.75rem,8vw,4.8rem)}.am-visual{min-height:535px}.am-phone{transform:rotate(0) scale(.91)}.am-visual-caption{bottom:-3px}.am-facts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.am-facts-grid>div{padding:22px 16px!important;border-bottom:1px solid #cbdff6}.am-facts-grid>div:nth-child(2){border-right:0}.am-facts-grid>div:nth-child(n+3){border-bottom:0}.am-app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.am-shot-gallery-cers,.am-shot-gallery-video{grid-template-columns:repeat(3,minmax(0,1fr))}.am-enem-grid{gap:40px}.am-last-cta-inner{align-items:flex-start;flex-direction:column;gap:20px}}
 @media(max-width:550px){.am-breadcrumb{margin-bottom:33px}.am-hero h1{font-size:clamp(2.6rem,12vw,3.9rem)}.am-hero-copy>p.am-lead{font-size:1rem}.am-actions{align-items:stretch;flex-direction:column}.am-actions .button{width:100%}.am-visual{min-height:500px}.am-phone{transform:scale(.85)}.am-feature-grid,.am-app-grid,.am-video-grid{grid-template-columns:1fr}.am-repo{padding:25px 19px;align-items:stretch;flex-direction:column}.am-repo-actions{align-items:stretch}.am-repo-actions .button{text-align:center;white-space:normal}.am-cers-intro{align-items:flex-start;flex-direction:column;gap:18px}.am-section-label{align-items:flex-start;flex-direction:column;gap:5px}.am-shot-gallery-cers,.am-shot-gallery-video{grid-template-columns:repeat(2,minmax(0,1fr))}.am-shot-gallery img,.am-shot-gallery-video img{height:210px}.am-gallery-heading{align-items:flex-start;flex-direction:column;gap:12px}.am-enem-panel{padding:29px 22px}.am-enem-panel>strong{font-size:1.9rem}.am-last-cta{padding:65px 0}}
 @media(prefers-reduced-motion:reduce){.am-shot-gallery a{transition:none}}
+
+/* Moodle Mobile: oferta comercial, recursos e etapas */
+.am-project .am-feature-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.am-commercial-offer{background:linear-gradient(115deg,#e9f4ff,#f7fbff)}
+.am-commercial-offer>div:first-child{flex:1}
+.am-offer-price{font-size:clamp(2.5rem,4vw,3.5rem)!important;line-height:1.15}
+.am-offer-price span{font-size:1.2rem;font-weight:700;color:#57708c;margin-left:4px}
+.am-process-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.am-process-grid>div{padding:24px 26px;background:#f5f9ff;border:1px solid #dce7f4;border-radius:18px}
+.am-process-grid span{font-size:.77rem;color:#0758d4;font-weight:900}
+.am-process-grid h4{font-size:1.12rem;margin:15px 0 9px}
+.am-process-grid p{font-size:.88rem;margin:0}
+@media(max-width:1080px){.am-project .am-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:820px){.am-process-grid{grid-template-columns:1fr}}
+@media(max-width:550px){.am-project .am-feature-grid{grid-template-columns:1fr}}
